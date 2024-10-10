@@ -13,7 +13,8 @@ body {
 
 header {
     background-color: #fff;
-    color: #777; /* Cor do texto ajustada para melhor contraste */
+    color: #777;
+    /* Cor do texto ajustada para melhor contraste */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -23,14 +24,16 @@ header {
 
 .logo h1 {
     margin-left: 20px;
-    font-size: 2rem; /* Ajustado para maior destaque */
+    font-size: 2rem;
+    /* Ajustado para maior destaque */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     margin-right: 20px;
-    justify-content: space-around; /* Alinhamento dos itens no menu */
+    justify-content: space-around;
+    /* Alinhamento dos itens no menu */
 }
 
 nav ul li {
@@ -41,7 +44,8 @@ nav ul li a {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transições mais específicas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transições mais específicas */
 }
 
 nav ul li a:hover {
@@ -50,7 +54,8 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-    outline: 2px solid #b6ccb2; /* Destaque para acessibilidade */
+    outline: 2px solid #b6ccb2;
+    /* Destaque para acessibilidade */
 }
 
 .home {
@@ -80,14 +85,14 @@ nav ul li a:focus {
 .container-home {
     background-color: #fff;
     padding: 2rem;
-    max-width: 500px; /* Limitação da largura */
-    width: 30%; /* Pode ajustar isso conforme necessário */
+    max-width: 500px;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    margin: 0 2rem; /* Margin ajustada para centralização */
+    margin: 0 2rem;
     border-radius: 20px;
     gap: 25px;
-    position: relative; /* Alterado de absolute para relative */
+    position: relative;
     z-index: 2;
 }
 
@@ -102,10 +107,240 @@ nav ul li a:focus {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transições mais específicas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transições mais específicas */
 }
 
 .cta-button:hover {
     background: #658161;
     color: #fff;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container-sobre {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.corpo {
+    display: flex;
+    width: 100%;
+}
+
+.corpo img {
+    position: relative;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 550px;
+
+}
+
+.conteudo {
+    width: 50%;
+    padding: 50px;
+
+}
+
+.conteudo h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.conteudo p {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    font-weight: 100;
+
+}
+
+.beneficios {
+    margin-bottom: 20px;
+}
+
+.beneficios li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.beneficios li::before {
+    content: '✔';
+    color: #658161;
+}
+
+.citacao {
+    background-color: #658161;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-beneficios {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 100px;
+}
+
+.comunidade {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.comunidade h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: start;
+    display: flex;
+
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    color: #658161;
+    margin-bottom: 10px;
+
+}
+
+.item p {
+    font-size: 0.9rem;
+    color: #666;
+    width: 70%;
+}
+
+.item-p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+
+.nutricao {
+    text-align: center;
+    background-color: #e4ebe3;
+    padding: 50px 20px;
+    margin: 0 auto;
+
+
+
+}
+
+.nutricao h2 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: 'Gill Sans';
+}
+
+.nutricao p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 97%;
+    height: 115%;
+}
+
+.step-circulo {
+    background-color: #dbe0d7;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    color: #738166;
+}
+
+.step h3 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.step-button {
+    padding: 10px 20px;
+    border: 2px solid #658161;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #738166;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+.step-button:hover{
+    background-color: #658161;
+    color: #fff;
+
 }
