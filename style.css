@@ -344,3 +344,101 @@ nav ul li a:focus {
     color: #fff;
 
 }
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.contato-info img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+.contato-info{
+    flex: 1;
+    background-color: #dbe4d9;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+}
+.contato-info h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+
+
+}
+.contato-info p{
+    font-size: 1rem;
+    color: #666;
+
+}
+.formulario{
+    flex: 2;
+    padding: 30px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.formulario-grupo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.formulario-field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+label{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+input, textarea{
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease;
+    
+}
+input:focus, textarea:focus{
+    border-color: #738166;
+}
+textarea{
+    height: 120px;
+    resize: none;
+    
+}
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #658161;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+button:hover{
+    background-color: #738166;
+
+}
